@@ -1,0 +1,191 @@
+doctype html
+html(lang='ru')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Каталог
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            section.py-5
+                .container.px-4.px-lg-5.mt-5
+                    .row.gx-4.gx-lg-5.row-cols-2.row-cols-md-3.row-cols-xl-4.justify-content-center
+                        .col.mb-5
+                            .card.h-100
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Гайка М6
+                                        // Product price
+                                        | $40.00 - $80.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Sale badge
+                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Выгодно
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Гайка М8
+                                        // Product reviews
+                                        .d-flex.justify-content-center.small.text-warning.mb-2
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                        // Product price
+                                        span.text-muted.text-decoration-line-through $20.00
+                                        | $18.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Sale badge
+                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Выгодно
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Гайка М10
+                                        // Product price
+                                        span.text-muted.text-decoration-line-through $50.00
+                                        | $25.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Гайка М12
+                                        // Product reviews
+                                        .d-flex.justify-content-center.small.text-warning.mb-2
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                        // Product price
+                                        | $40.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Sale badge
+                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Выгодно
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Болтик М6
+                                        // Product price
+                                        span.text-muted.text-decoration-line-through $50.00
+                                        | $25.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Болтик М8
+                                        // Product price
+                                        | $120.00 - $280.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Sale badge
+                                .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Выгодно
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Болтик М10
+                                        // Product reviews
+                                        .d-flex.justify-content-center.small.text-warning.mb-2
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                        // Product price
+                                        span.text-muted.text-decoration-line-through $20.00
+                                        | $18.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+                        .col.mb-5
+                            .card.h-100
+                                // Product image
+                                img.card-img-top(src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg', alt='...')
+                                // Product details
+                                .card-body.p-4
+                                    .text-center
+                                        // Product name
+                                        h5.fw-bolder Болтик М12
+                                        // Product reviews
+                                        .d-flex.justify-content-center.small.text-warning.mb-2
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                            .bi-star-fill
+                                        // Product price
+                                        | $40.00
+                                // Product actions
+                                .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                    .text-center
+                                        a.btn.btn-outline-dark.mt-auto(href='catalog-item.html') Подробнее
+            // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

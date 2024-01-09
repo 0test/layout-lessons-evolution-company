@@ -1,0 +1,66 @@
+doctype html
+html(lang='ru')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Одинокая новость
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container.px-5.my-5
+
+                    .row.gx-5
+
+                        .col-lg-3
+                            .d-flex.align-items-center.mt-lg-5.mb-4
+                                img.img-fluid.rounded-circle(src='https://dummyimage.com/50x50/ced4da/6c757d.jpg', alt='...')
+                                .ms-3
+                                    .fw-bold Большой Начальник
+
+                        .col-lg-9
+
+                            // Post content
+                            article
+
+                                // Post header
+                                header.mb-4
+
+                                    // Post title
+                                    h1.fw-bolder.mb-1 Одинокая новость и её заголовок
+
+                                    // Post meta content
+                                    .text-muted.fst-italic.mb-2 January 1, 2023
+
+                                    // Post categories
+                                    a.badge.bg-secondary.text-decoration-none.link-light(href='#!') Тег
+                                    a.badge.bg-secondary.text-decoration-none.link-light(href='#!') И другой тег
+
+                                // Preview image figure
+                                figure.mb-4
+                                    img.img-fluid.rounded(src='https://dummyimage.com/900x400/ced4da/6c757d.jpg', alt='...')
+
+                                // Post content
+                                section.mb-5
+
+                                    p Наука
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
