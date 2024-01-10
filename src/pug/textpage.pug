@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title текстовая
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container                    
+                    .row.align-items-center.p-md-4.p-sm-1.p-xl-4
+                        h1.fw-bolder.mb-3 Текст
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt fugit architecto, autem quasi qui quae ratione, nemo ea cumque error aperiam magni perspiciatis odio harum culpa asperiores, possimus neque.
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
