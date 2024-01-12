@@ -1,16 +1,11 @@
 doctype html
 html(lang='ru')
-
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
-
         title Новости компании
-
-        // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
         include includes/css.pug
@@ -18,71 +13,63 @@ html(lang='ru')
     body.d-flex.flex-column
 
         main.flex-shrink-0
-
-            // Navigation
             include includes/navbar.pug
-
-            // Page Content
             section.py-5
                 .container.px-5
-
                     h1.fw-bolder.fs-5.mb-4 Новости компании
+                    .row.gx-5
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='https://dummyimage.com/600x350/ced4da/6c757d', alt='...')
+                                .card-body.p-4
+                                    a.text-decoration-none.link-dark.stretched-link(href='news-one.html')
+                                        .h5.card-title.mb-3 Мы открылись
+                                    p.card-text.mb-0
+                                        | Обеспечим население доступными и качественными болтиками и гаечками
+                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                    .d-flex.align-items-end.justify-content-between
+                                        .d-flex.align-items-center
+                                            .small
+                                                .text-muted March 12, 2023
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='https://dummyimage.com/600x350/adb5bd/495057', alt='...')
+                                .card-body.p-4
+                                    a.text-decoration-none.link-dark.stretched-link(href='news-one.html')
+                                        .h5.card-title.mb-3 Мы немного поработали
+                                    p.card-text.mb-0
+                                        | Успешная работа компании по продаже болтиков и гаечек способствует развитию местной экономики
+                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                    .d-flex.align-items-end.justify-content-between
+                                        .d-flex.align-items-center
+                                            .small
+                                                .text-muted March 12, 2023
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='https://dummyimage.com/600x350/6c757d/343a40', alt='...')
+                                .card-body.p-4
+                                    a.text-decoration-none.link-dark.stretched-link(href='news-one.html')
+                                        .h5.card-title.mb-3 Мы закрылись
+                                    p.card-text.mb-0
+                                        | Гудит, как улей, родной завод.
+                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                    .d-flex.align-items-end.justify-content-between
+                                        .d-flex.align-items-center
+                                            .small
+                                                .text-muted March 12, 2023
+                    .row.gx-5
+                        nav
+                            ul.pagination.justify-content-center
+                                li.page-item 
+                                    a.page-link(href='news-one.html') 1
+                                li.page-item 
+                                    span.page-link.active(href='news-one.html') 2
+                                li.page-item 
+                                    a.page-link(href='news-one.html') 3
 
-                    .card.border-0.shadow.rounded-3.overflow-hidden
-                        .card-body.p-0
-                            .row.gx-0
-                                .col-lg-6.col-xl-5.py-lg-5
-                                    .p-4.p-md-5
-                                        .h2.fw-bolder Какая-то важная новость
-                                        p Сильно важно, надо почитать всем
-                                        a.stretched-link.text-decoration-none(href='news-one.html')
-                                .col-lg-6.col-xl-7
-                                    .bg-featured-blog(style='background-image: url("https://dummyimage.com/700x350/343a40/6c757d");')
 
-            // Blog preview section
+ 
 
-            section.py-5
-            .container.px-5
-                h2.fw-bolder.fs-5.mb-4 Ещё новости
-                .row.gx-5
-                    .col-lg-4.mb-5
-                        .card.h-100.shadow.border-0
-                            img.card-img-top(src='https://dummyimage.com/600x350/ced4da/6c757d', alt='...')
-                            .card-body.p-4
-                                a.text-decoration-none.link-dark.stretched-link(href='news-one.html')
-                                    .h5.card-title.mb-3 Мы открылись
-                                p.card-text.mb-0
-                                    | Обеспечим население доступными и качественными болтиками и гаечками
-                            .card-footer.p-4.pt-0.bg-transparent.border-top-0
-                                .d-flex.align-items-end.justify-content-between
-                                    .d-flex.align-items-center
-                                        .small
-                                            .text-muted March 12, 2023 &middot; 6 min read
-                    .col-lg-4.mb-5
-                        .card.h-100.shadow.border-0
-                            img.card-img-top(src='https://dummyimage.com/600x350/adb5bd/495057', alt='...')
-                            .card-body.p-4
-                                a.text-decoration-none.link-dark.stretched-link(href='news-one.html')
-                                    .h5.card-title.mb-3 Мы немного поработали
-                                p.card-text.mb-0
-                                    | Успешная работа компании по продаже болтиков и гаечек способствует развитию местной экономики
-                            .card-footer.p-4.pt-0.bg-transparent.border-top-0
-                                .d-flex.align-items-end.justify-content-between
-                                    .d-flex.align-items-center
-                                        .small
-                                            .text-muted March 12, 2023 &middot; 6 min read
-                    .col-lg-4.mb-5
-                        .card.h-100.shadow.border-0
-                            img.card-img-top(src='https://dummyimage.com/600x350/6c757d/343a40', alt='...')
-                            .card-body.p-4
-                                a.text-decoration-none.link-dark.stretched-link(href='news-one.html')
-                                    .h5.card-title.mb-3 Мы закрылись
-                                p.card-text.mb-0
-                                    | Гудит, как улей, родной завод.
-                            .card-footer.p-4.pt-0.bg-transparent.border-top-0
-                                .d-flex.align-items-end.justify-content-between
-                                    .d-flex.align-items-center
-                                        .small
-                                            .text-muted March 12, 2023 &middot; 6 min read
+                
         include includes/footer.pug
         include includes/scripts.pug
